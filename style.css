@@ -1,0 +1,291 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* css for navbar */
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(217, 248, 238);
+    position: sticky;
+    top: 0;
+}
+
+/* css for logo */
+
+.navcontent{
+    display: flex;
+    width: 70%;
+}
+
+.name p{
+    margin-left: 20px;
+    width: 80px;
+    font-weight: 700;
+    color: green;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.name p span{
+    font-size: medium;
+    margin-left: 15px;
+    position: relative;
+    top: -10px;
+}
+
+/* css for search bar */
+
+.search{
+    height: 30px;
+    margin: auto;
+    margin: auto 10%;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    width: 100%;
+}
+
+/* css for navigation */
+
+.navbuttons{
+    position: inherit;
+    /* padding-right: 30px; */
+    cursor: pointer;
+}
+
+.fav , .cart{
+    background-color: white;
+    width: 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.fav,.cart{
+    position: relative;
+}
+
+.topflow{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+
+.you {
+    background-color: transparent;
+    border: none;
+    font-size: large;
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+.moreoptions {
+    display: none;
+    background-color:  rgb(217, 248, 238);
+    width: 100px;
+    position: absolute;
+    right: 200px;
+}
+
+.moreoptions ul li {
+    padding: 5px;
+}
+
+.you:hover .moreoptions{
+    display: block;
+}
+
+/* main content */
+
+main{
+    margin: auto 10%;
+}
+
+/* carosel */
+
+.carousel-cont{
+    margin: 20px 0;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel {
+    height: 100%;
+    width: 300%;
+    display: flex;
+    animation: slider 10s infinite linear;
+}
+
+.carousel img{
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes slider {
+    0% {
+        margin-left: 0;
+    }
+    25% {
+        margin-left: 0;
+    }
+    30% {
+        margin-left: -100%;
+    }
+    60% {
+        margin-left: -100%;
+    }
+    65%{
+        margin-left: -200%;
+    }
+    95%{
+        margin-left: -200%;
+    }
+    100%{
+        margin-left: 0%;
+    }
+}
+
+/* products */
+
+.headding{
+    background-color:  rgb(217, 248, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+    margin: 30px 0;
+}
+
+.cards-cont{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.figure {
+    border: 10px;
+}
+
+/* about us */
+
+.about-cont {
+    padding-top: 30px;
+    display: inline-flex;
+}
+
+.about-cont figcaption{
+    width: 50%;
+    padding-top: 50px;
+}
+
+.about-cont figcaption h2{
+    padding: 10px 0;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.corevalues h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.corevalues ul{
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+
+.about-cont figcaption p{
+    text-align: justify;
+    padding-top: 10px;
+}
+
+/* footer */
+
+footer{
+    background-color:  rgb(217, 248, 238);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: smaller;
+    padding: 30px;
+}
+
+.col-1{
+    width: 20%;
+}
+
+.col-1 h3{
+    margin: 10px 0;
+}
+
+ul{
+    list-style: none;
+}
+
+.final-info{
+    background-color: black;
+    color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-small;
+    padding: 5px;
+}
+
+@media (max-width: 700px) {
+    .navcontent{
+        width: 40%;
+    }
+    .navbuttons{
+        width: 60%;
+    }
+    .about-cont{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-cont figcaption{
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .navcontent{
+        width: 25%;
+    }
+    .navbuttons{
+        width: 75%;
+        padding-right: 0px;
+
+    }
+    .search{
+        display: none;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-1{
+        width: 90%;
+    }
+}
